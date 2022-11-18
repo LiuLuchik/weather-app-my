@@ -1,0 +1,72 @@
+body {
+  font-family: "Lobster Two", cursive;
+  font-family: "Raleway", sans-serif;
+}
+.card {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.btn-mine-city-1 {
+  position: relative;
+  right: 10px;
+}
+
+.btn-mine-city-2 {
+  position: relative;
+  right: 97px;
+}
+
+.btn-mine-city-3 {
+  position: relative;
+  right: 209px;
+}
+
+.enter-city {
+  position: static;
+  width: 300px;
+}
+
+.btn-primary {
+  position: static;
+}
+
+.btn-success {
+  position: relative;
+  left: 60px;
+}
+
+.weath-now {
+  margin: 10px auto;
+}
+
+.td-city,
+.td-day,
+.hours,
+.td-date {
+  position: relative;
+  right: 0;
+  margin-top: 10px;
+}
+
+.td-detail-weather,
+.td-temp,
+.wind-now {
+  position: relative;
+  left: 102px;
+  margin-top: 10px;
+}
+
+.col-sm-2 {
+  flex: 60 0 auto;
+}
+
+.card-title {
+  font-size: 15px;
+}
+
+.other-days {
+  padding: 10px;
+}
