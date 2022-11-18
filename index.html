@@ -49,13 +49,19 @@
 
         <div class="container">
           <div class="row weath-now">
-            <div class="col-6 td-city" id="city">Lond</div>
+            <ul>
+              <li><div class="col-6 td-city" id="city">Lond</div></li>
+              <li><div class="col-6 day"></div></li>
+              <li><div class="col-6 hours"></div></li>
+              <li><span id="date-today" class="col-6"></span>
+            <span id="month-today"></span></div></li>
+            </ul>
             <div class="col-6 td-detail-weather">Cloudy</div>
-            <div class="col-6 day"></div>
+
             <div class="col-6 td-temp">
               <img src="images/cloudy.png" alt="cloudy" class="logo" />
             </div>
-            <div class="col-6 hours"></div>
+
             <div class="col-6 td-temp">
               <div class="float-right">
                 <span class="temperature" id="temperature">50</span
@@ -65,8 +71,7 @@
                 </span>
               </div>
             </div>
-            <div id="date-today" class="col-6 td-date"></div>
-            <p id="month-today"></p>
+      
             <div class="col-6 wind-now" id="wind">Wind: 4km/h</div>
           </div>
         </div>
