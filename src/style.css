@@ -35,7 +35,22 @@ body {
 
 .btn-success {
   position: relative;
-  left: 60px;
+  left: 20px;
+}
+
+ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+li {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 150;
+  height: 20px;
+  line-height: 2;
+  list-style: none;
+  margin-bottom: 10px;
 }
 
 .weath-now {
@@ -52,13 +67,22 @@ body {
 }
 
 .td-detail-weather,
-.td-temp,
-.wind-now {
+.td-temp .wind-now {
   position: relative;
-  left: 102px;
+  left: 40px;
   margin-top: 10px;
 }
 
+/*#wind {
+  position: relative;
+  margin-top: 10px;
+  padding: 20px;
+}*/
+
+.windd {
+  margin: 10 0;
+  padding: 0;
+}
 .col-sm-2 {
   flex: 60 0 auto;
 }

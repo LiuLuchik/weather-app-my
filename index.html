@@ -49,32 +49,37 @@
 
         <div class="container">
           <div class="row weath-now">
-            <ul>
-              <li><div class="col-6 td-city" id="city">Lond</div></li>
-              <li><div class="col-6 day"></div></li>
-              <li><div class="col-6 hours"></div></li>
-              <li><span id="date-today" class="col-6"></span>
-            <span id="month-today"></span></div></li>
-            </ul>
-            <div class="col-6 td-detail-weather">Cloudy</div>
-
-            <div class="col-6 td-temp">
-              <img src="images/cloudy.png" alt="cloudy" class="logo" />
+            <div class="col-6">
+              <ul>
+                <li><span class="col-6 td-city" id="city">Lond</span></li>
+                <li><span class="col-6 day"></span></li>
+                <li><span class="col-6 hours"></span></li>
+                <li>
+                  <span id="date-today" class="col-6"></span>
+                  <span id="month-today"></span>
+                </li>
+              </ul>
             </div>
-
-            <div class="col-6 td-temp">
-              <div class="float-right">
-                <span class="temperature" id="temperature">50</span
-                ><span class="units">
-                  <a href="#" id="celsius-link">°C</a> |
-                  <a href="#" id="fahrenheit-link">°F</a>
-                </span>
+            <div class="col-6">
+              <ul>
+                <li>Cloudy</li>
+               <div><img src="images/cloudy.png" alt="cloudy" class="logo" />
+</div>              
+<li>           
+                <div class="float-right">
+                  <span class="temperature" id="temperature">50</span
+                  ><span class="units">
+                    <a href="#" id="celsius-link">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a>
+                  </span>
+                </li>   
+                    <li>Wind: <span id="wind"></span> km/h</li>
+                  </ul>
+          </div>
               </div>
             </div>
-      
-            <div class="col-6 wind-now" id="wind">Wind: 4km/h</div>
           </div>
-        </div>
+       
         <div class="row">
           <div class="col-sm-2">
             <div class="card" style="width: 100px">
@@ -151,6 +156,7 @@
         </div>
       </div>
     </div>
+     </div>
     <script src="src/index.js"></script>
   </body>
 </html>
