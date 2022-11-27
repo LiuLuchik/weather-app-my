@@ -89,9 +89,9 @@ function displayWeatherCondition(response) {
   // document.querySelector("#temperature").innerHTML = Math.round(
   //   response.data.main.temp
   //);
-  //document.querySelector("#wind").innerHTML = Math.round(
-  //response.data.wind.speed
-  //);
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -105,8 +105,7 @@ function displayWeatherCondition(response) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
-  humidityElement.innerHTML = response.data.main.humidity;
-  windElement.innerHTML = Math.round(response.data.wind.speed);
+  //windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
