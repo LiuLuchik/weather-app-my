@@ -83,8 +83,14 @@ li {
   margin: 10 0;
   padding: 0;
 }
+
+#week {
+  padding-left: 30px;
+}
+
 .col-sm-2 {
   flex: 60 0 auto;
+  margin: 5px;
 }
 
 .card-title {
