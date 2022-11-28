@@ -85,13 +85,6 @@ celsiusLink.addEventListener("click", convertToCelsius);
 //API
 
 function displayWeatherCondition(response) {
-  // document.querySelector("#city").innerHTML = response.data.name;
-  // document.querySelector("#temperature").innerHTML = Math.round(
-  //   response.data.main.temp
-  //);
-  document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
-  );
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -105,8 +98,8 @@ function displayWeatherCondition(response) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
-  //windElement.innerHTML = Math.round(response.data.wind.speed);
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
