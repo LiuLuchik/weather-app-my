@@ -25,16 +25,10 @@
   <title>Weather app</title>
 </head>
   <body>
+    <div class="container">
     <i class="fa-thin fa-cloud-drizzle"></i>
     <div class="card">
       <div class="card-body">
-        <div class="container">
-          <div class="row">
-            <div class="btn-mine-city-1 col-4">London</div>
-            <div class="btn-mine-city-2 col-4">Paris</div>
-            <div class="btn-mine-city-3 col-4">New York</div>
-          </div>
-        </div>
         <form class="search-form" id="search-form">
           <input
             type="search"
@@ -48,7 +42,6 @@
           <button class="btn btn-success" id="currentLocation">Current</button>
         </form>
 
-        <div class="container">
           <div class="row weath-now">
             <div class="col-6">
               <ul>
@@ -81,86 +74,13 @@
                   </ul>
           </div>
               </div>
-            </div>
-          </div>
-       
-        <div class="row" id="week">
-          <div class="col-sm-2">
-            <div class="card" style="width: 100px">
-              <div class="card-body other-days">
-                <h5 class="card-title">Sun</h5>
-                <i class="fa-thin fa-cloud-drizzle"></i>
-                <p class="card-text">
-                  <img src="images/cloudy.png" alt="cloudy" class="logo" />
-                  14°C
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-2">
-            <div class="card" style="width: 100px">
-              <i class="fa-thin fa-cloud-drizzle"></i>
-              <div class="card-body other-days">
-                <h5 class="card-title">Mon</h5>
-                <p class="card-text">
-                  <img
-                    src="images/rain_light.png"
-                    alt="rain slight"
-                    class="logo"
-                  />
-                  14°C
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-2">
-            <div class="card" style="width: 100px">
-              <i class="fa-thin fa-cloud-drizzle"></i>
-              <div class="card-body other-days">
-                <h5 class="card-title">Tue</h5>
-                <p class="card-text">
-                  <img src="images/cloudy.png" alt="cloudy" class="logo" />
-                  14°C
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-2">
-            <div class="card" style="width: 100px">
-              <i class="fa-thin fa-cloud-drizzle"></i>
-              <div class="card-body other-days">
-                <h5 class="card-title">Wed</h5>
-                <p class="card-text">
-                  <img src="images/cloudy.png" alt="cloudy" class="logo" />
-                  14°C
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-2">
-            <div class="card" style="width: 100px">
-              <i class="fa-thin fa-cloud-drizzle"></i>
-              <div class="card-body other-days">
-                <h5 class="card-title">Thu</h5>
-                <p class="card-text">
-                  <img
-                    src="images/rain_light.png"
-                    alt="rain slight"
-                    class="logo"
-                  />
-                  14°C
-                </p>
-              </div>
-            </div>
-          </div>
+          
+        <div class= "weather-forecast" id="forecast">
         </div>
       <a href="https://github.com/LiuLuchik/weather-app-my">Git</a></div>
     </div>
-     </div>
+     
+    </div>     
     <script src="src/index.js"></script>
     
   </body>

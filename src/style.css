@@ -84,7 +84,13 @@ li {
   padding: 0;
 }
 
-#week {
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+
+#forecast {
   padding-left: 30px;
 }
 
@@ -93,10 +99,11 @@ li {
   margin: 5px;
 }
 
-.card-title {
+.card-forecast-date {
   font-size: 15px;
 }
 
-.other-days {
-  padding: 10px;
+.logo {
+  margin-left: auto;
+  margin-right: auto;
 }

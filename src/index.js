@@ -37,6 +37,32 @@ function formatMonth(now) {
   return `${month}`;
 }
 
+//FORECAST
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let forecastDays = ["Sun", "Mon", "Tue", "Wed"];
+  forecastDays.forEach(function (forecastDay) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-sm-2">
+    <div class="card" style="width: 100px">
+          <div class="card-forecast-date">${forecastDay}</div>
+             <img src="images/cloudy.png" alt="" class="logo" width="50"/>
+             <div class = "weather-forecast-temperature">
+             <span class="weather-forecast-temperature-min">8</span>
+             <span class="weather-forecast-temperature-max">14</span>
+             </div>
+        </div>
+    </div>
+   `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function search(event) {
   event.preventDefault();
   let cityElement = document.querySelector("#city");
@@ -136,3 +162,5 @@ function currentLoc() {
 
 let currentLocation = document.querySelector("#currentLocation");
 currentLocation.addEventListener("click", currentLoc);
+
+displayForecast();
