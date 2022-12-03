@@ -45,6 +45,21 @@ function formatDayForecast(timestamp) {
   return days[day];
 }
 
+//Time
+function formatTime(now) {
+  let currentHours = now.getHours();
+  if (currentHours < 10) {
+    currentHours = `0${currentHours}`;
+  }
+  let currentMinutes = now.getMinutes();
+  if (currentMinutes < 10) {
+    currentMinutes = `0${currentMinutes}`;
+  }
+  return `${currentHours}:${currentMinutes}`;
+}
+// let currentHours = now.getHours();
+// let currentMinutes = now.getMinutes();
+
 //FORECAST
 function displayForecast(response) {
   let forecast = response.data.daily;
@@ -99,32 +114,8 @@ monthElement.innerHTML = formatMonth(now);
 let dayElement = document.querySelector(".day");
 dayElement.innerHTML = formatDay(now);
 
-//Time
-
-let currentHours = now.getHours();
-let currentMinutes = now.getMinutes();
-
-let hours = document.querySelector(".hours");
-hours.innerHTML = `${currentHours}:${currentMinutes}`;
-
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 66;
-}
-
-function convertToCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 19;
-}
-
-//C/F
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", convertToFahrenheit);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertToCelsius);
+let hoursElement = document.querySelector(".hours");
+hoursElement.innerHTML = formatTime(now);
 
 //API
 
