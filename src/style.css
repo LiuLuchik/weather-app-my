@@ -9,21 +9,6 @@ body {
   padding: 10px 0;
 }
 
-.btn-mine-city-1 {
-  position: relative;
-  right: 10px;
-}
-
-.btn-mine-city-2 {
-  position: relative;
-  right: 97px;
-}
-
-.btn-mine-city-3 {
-  position: relative;
-  right: 209px;
-}
-
 .enter-city {
   position: static;
   width: 300px;
@@ -38,6 +23,10 @@ body {
   left: 20px;
 }
 
+#city {
+  font-size: 23px;
+  font-weight: 500;
+}
 ul {
   margin: 0 0 10px;
   padding: 0;
@@ -48,7 +37,7 @@ li {
   font-size: 20px;
   font-weight: 150;
   height: 20px;
-  line-height: 2;
+  line-height: 3;
   list-style: none;
   margin-bottom: 10px;
 }
@@ -73,6 +62,17 @@ li {
   margin-top: 10px;
 }
 
+.weather-temperature {
+  margin: 40px 0 0 0;
+}
+
+#temperature,
+.units {
+  margin-left: -10px;
+  font-size: 35px;
+  font-weight: 600;
+}
+
 /*#wind {
   position: relative;
   margin-top: 10px;
@@ -91,12 +91,12 @@ li {
 }
 
 #forecast {
-  padding-left: 30px;
+  /* padding-left: 5px; */
 }
 
 .col-sm-2 {
   flex: 60 0 auto;
-  margin: 5px;
+  margin: 8px;
 }
 
 .card-forecast-date {

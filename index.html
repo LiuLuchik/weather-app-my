@@ -22,67 +22,62 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <title>Weather app</title>
-</head>
+    <title>Weather app</title>
+  </head>
   <body>
     <div class="container">
-    <i class="fa-thin fa-cloud-drizzle"></i>
-    <div class="card">
-      <div class="card-body">
-        <form class="search-form" id="search-form">
-          <input
-            type="search"
-            placeholder="Enter a city"
-            autofocus="on"
-            autocomplete="off"
-            id="city-input"
-            class="enter-city"
-          />
-          <input type="submit" value="Search" class="btn btn-primary" />
-          <button class="btn btn-success" id="currentLocation">Current</button>
-        </form>
+      <div class="card">
+        <div class="card-body">
+          <form class="search-form" id="search-form">
+            <input
+              type="search"
+              placeholder="Enter a city"
+              autofocus="on"
+              autocomplete="off"
+              id="city-input"
+              class="enter-city"
+            />
+            <input type="submit" value="Search" class="btn btn-primary" />
+            <button class="btn btn-success" id="currentLocation">
+              Current
+            </button>
+          </form>
 
           <div class="row weath-now">
             <div class="col-6">
               <ul>
-                <li><span class="col-6 td-city" id="city">Lond</span></li>
-                <li><span class="col-6 day"></span></li>
-                <li><span class="col-6 hours"></span></li>
+                <li><span class="td-city" id="city">L</span></li>
+                <li><span class="day"></span></li>
+                <li><span class="hours"></span></li>
                 <li>
-                  <span id="date-today" class="col-6"></span>
+                  <span id="date-today"></span>
                   <span id="month-today"></span>
                 </li>
               </ul>
             </div>
-            
             <div class="col-6">
-              <ul>
-                <div class="clearfix weather-temperature">
-                <img src="" alt="Clear" id="icon" class="float-left" />           
-                </div>
-                <li>           
-                <div class="float-right">
-                  <span class="temperature" id="temperature">50</span
-                  ><span class="units">
-                    <a href="#" id="celsius-link" class="active">°C</a>
-                  </span>
-                </li> 
-                <li>Humidity: <span id="humidity"></span>%</li>
-                    <li id="description"></li>
-                    <li>Wind: <span id="wind"></span> km/h</li>
-                  </ul>
-          </div>
+              <div class="clearfix weather-temperature float-right">
+                <img src="" alt="" id="icon" class="float-left" />
+                <strong id="temperature"></strong><span class="units"> °C</span>
               </div>
-          
-        <div class= "weather-forecast" id="forecast">
+            </div>
+   <div class="col-6">
+</div>
+            <div class="col-6">
+            <ul>
+              <li id="description"></li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="weather-forecast" id="forecast"></div>
+      </div>
     </div>
-    </div> 
     <small>
-    <a href="https://github.com/LiuLuchik/weather-app-my">Git </a>
-      
-  </small>
+      <a href="https://github.com/LiuLuchik/weather-app-my">Git </a>
+    </small>
     <script src="src/index.js"></script>
-    
   </body>
 </html>

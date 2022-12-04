@@ -57,8 +57,6 @@ function formatTime(now) {
   }
   return `${currentHours}:${currentMinutes}`;
 }
-// let currentHours = now.getHours();
-// let currentMinutes = now.getMinutes();
 
 //FORECAST
 function displayForecast(response) {
